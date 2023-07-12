@@ -8,6 +8,6 @@ const server = express();
 server.use(morgan("dev"));
 server.use(express.json());
 
-server.use("/planets",router);
+server.use("/Planets",router);
 
 module.exports = server;

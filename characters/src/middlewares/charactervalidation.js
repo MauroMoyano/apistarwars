@@ -5,7 +5,7 @@ module.exports = (req, res, next) => {
     if(name){
        return next();
     }else{
-        throw new ClientError("Error en el nombre", 401);
+        throw new ClientError("Error en elllllllllllllllllll nombre", 401);
     }
 
 }

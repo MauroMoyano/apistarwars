@@ -1,7 +1,6 @@
 const express = require("express");
 const morgan = require("morgan");
 const router = require("./routes");
-const {json} = require("express");
 
 const server = express();
 
@@ -10,6 +9,8 @@ server.use(morgan("dev"));
 server.use(express.json());
 
 server.use("/characters", router);
+server.use("/characters/:id", router)
+
 
 server.use("*", (req, res) => {
     res.status(404).send("Not Found");
