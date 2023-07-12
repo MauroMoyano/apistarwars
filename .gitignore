@@ -1,6 +1,7 @@
 .idea/vcs.xml
 characters/node_modules/
 database/node_modules/
+database/.env
 films/node_modules/
 planets/node_modules/
 zgateway/node_modules/
