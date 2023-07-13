@@ -32,4 +32,8 @@ characterSchema.statics.insert = async function(character){
     return this.create(character);
 }
 
+characterSchema.statics.delete = async function(_id){
+    return this.findByIdAndDelete(_id)
+}
+
 module.exports = characterSchema;

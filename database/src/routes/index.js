@@ -23,4 +23,11 @@ router.post("/:model", validateModel, async (req, res) => {
     res.status(200).json(response);
 })
 
+router.delete("/:model", validateModel, async (req, res) => {
+    const { id } = req.query;
+    const { model } = req.params;
+    const response = await store[model].delete(id);
+    res.status(200).json(response);
+})
+
 module.exports = router;

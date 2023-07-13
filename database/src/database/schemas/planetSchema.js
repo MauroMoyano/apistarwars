@@ -30,5 +30,8 @@ planetSchema.statics.insert = async function(film) {
     return this.create(film);
 }
 
+planetSchema.statics.delete = async function(_id){
+    return this.findByIdAndDelete(_id)
+}
 
 module.exports = planetSchema;

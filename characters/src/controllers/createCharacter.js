@@ -2,7 +2,7 @@ const Character = require("../data");
 const { response } = require("../utils")
 
 module.exports = async (req, res) => {
-    res.status(200)
-    const newCharacter = await Character.create();
+    const data = req.body;
+    const newCharacter = await Character.create(data);
     response(res, 201, newCharacter)
 }
