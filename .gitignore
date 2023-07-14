@@ -5,3 +5,5 @@ database/.env
 films/node_modules/
 planets/node_modules/
 zgateway/node_modules/
+.env
+node_modules
